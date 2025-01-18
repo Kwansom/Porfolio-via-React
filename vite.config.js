@@ -8,4 +8,6 @@ export default defineConfig({
     port: 3000,
     open: true,
   },
+  // configuration to handle JPG files
+  assetsInclude: ["**/*.JPG"],
 });
