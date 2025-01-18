@@ -11,11 +11,11 @@ export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("About");
 
   const renderPage = () => {
-    if (currentPage === "Resume") {
-      return <Resume />;
-    }
     if (currentPage === "About") {
       return <About />;
+    }
+    if (currentPage === "Resume") {
+      return <Resume />;
     }
     if (currentPage === "Portfolio") {
       return <Portfolio />;
@@ -27,9 +27,7 @@ export default function PortfolioContainer() {
 
   return (
     <div>
-      {/* // TODO: Add a comment describing what we are passing as props */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* // TODO: Add a comment explaining what is happening on the following line */}
       <main className="mx-3">{renderPage()}</main>
       <Footer></Footer>
     </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Header = ({ setCurrentSection, currentSection }) => {
   const handleNavigation = (section) => {
@@ -10,11 +10,11 @@ const Header = ({ setCurrentSection, currentSection }) => {
       <h1>Kun Wansom</h1>
       <nav>
         <ul>
-          {['About Me', 'Portfolio', 'Contact', 'Resume'].map((section) => (
+          {["About Me", "Portfolio", "Contact", "Resume"].map((section) => (
             <li
               key={section}
               onClick={() => handleNavigation(section)}
-              className={currentSection === section ? 'active' : ''}
+              className={currentSection === section ? "active" : ""}
             >
               {section}
             </li>
