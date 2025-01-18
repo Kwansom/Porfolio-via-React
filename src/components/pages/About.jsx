@@ -10,8 +10,8 @@ export default function About() {
         <h1>About Me:</h1>
         Hello, my name is Kun. I am an aspiring web developer. Having worked in
         the fine art industry for close to 10 years- I want to take my analog
-        problem solving skills into the digital landscape of tech. You can find
-        my work experience and coding portfolio here!
+        problem solving skills into the digital landscape. You can find my work
+        experience and coding portfolio here!
       </p>
     </div>
   );

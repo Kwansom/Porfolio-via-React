@@ -7,6 +7,6 @@
 
 .about-container p {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 2; /* Makes the text double spaced */
-    margin-top: 10px; /* Optional: Adds space between the paragraph and other elements */
+    line-height: 2; 
+    margin-top: 10px;
   }
