@@ -40,8 +40,9 @@ export default function Resume() {
               color: "#222",
               boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.1)",
               "&:hover": {
-                backgroundColor: "#f4a300",
+                backgroundColor: "gold",
                 boxShadow: "0px 8px 20px rgba(0, 0, 0, 0.2)",
+                transform: "scale(1.05)",
               },
             }}
           >

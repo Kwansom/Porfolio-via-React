@@ -1,4 +1,5 @@
 import react, { useState } from "react";
+import "../../assets/css/Contact.css";
 
 export default function Contact() {
   // useState for each input - track the value of each input boxes
@@ -48,87 +49,94 @@ export default function Contact() {
   };
 
   return (
-      <div>
-        <h1>Contact</h1>
-        <div className="flex items-center justify-center p-12">
-          <div className="mx-auto w-full max-w-[550px]">
-            <form onSubmit={handleSubmit}>
-              {/* Name Input */}
-              <div className="mb-5">
-                <label
-                  htmlFor="name"
-                  className="mb-3 block text-base font-medium text-[#07074D]"
-                >
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Full Name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  onBlur={() => handleBlur("name")}
-                  className={`w-full rounded-md border py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md ${nameError ? "border-red-500" : "border-[#e0e0e0]"}`}
-                />
-                {nameError && <span className="text-red-500">{nameError}</span>}
-              </div>
-  
-              {/* Email Input */}
-              <div className="mb-5">
-                <label
-                  htmlFor="email"
-                  className="mb-3 block text-base font-medium text-[#07074D]"
-                >
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="example@domain.com"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  onBlur={() => handleBlur("email")}
-                  className={`w-full rounded-md border py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md ${emailError ? "border-red-500" : "border-[#e0e0e0]"}`}
-                />
-                {emailError && <span className="text-red-500">{emailError}</span>}
-              </div>
-  
-              {/* Message Input */}
-              <div className="mb-5">
-                <label
-                  htmlFor="message"
-                  className="mb-3 block text-base font-medium text-[#07074D]"
-                >
-                  Message
-                </label>
-                <textarea
-                  rows="4"
-                  name="message"
-                  id="message"
-                  placeholder="Type your message"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  onBlur={() => handleBlur("message")}
-                  className={`w-full resize-none rounded-md border py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md ${messageError ? "border-red-500" : "border-[#e0e0e0]"}`}
-                ></textarea>
-                {messageError && <span className="text-red-500">{messageError}</span>}
-              </div>
-  
-              {/* Submit Button */}
-              <div>
-                <button
-                  type="submit"
-                  className="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
+    <div>
+      <h1 className="contact-head">Say Hello!</h1>
+      <div className="flex items-center justify-center p-12">
+        <div className="mx-auto w-full max-w-[550px]">
+          <form onSubmit={handleSubmit}>
+            {/* Name Input */}
+            <div className="mb-5">
+              <label
+                htmlFor="name"
+                className="mb-3 block text-base font-medium text-[#07074D]"
+              >
+                Full Name
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                onBlur={() => handleBlur("name")}
+                className={`w-full rounded-md border py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md ${
+                  nameError ? "border-red-500" : "border-[#e0e0e0]"
+                }`}
+              />
+              {nameError && <span className="text-red-500">{nameError}</span>}
+            </div>
+
+            {/* Email Input */}
+            <div className="mb-5">
+              <label
+                htmlFor="email"
+                className="mb-3 block text-base font-medium text-[#07074D]"
+              >
+                Email Address
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@domain.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                onBlur={() => handleBlur("email")}
+                className={`w-full rounded-md border py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md ${
+                  emailError ? "border-red-500" : "border-[#e0e0e0]"
+                }`}
+              />
+              {emailError && <span className="text-red-500">{emailError}</span>}
+            </div>
+
+            {/* Message Input */}
+            <div className="mb-5">
+              <label
+                htmlFor="message"
+                className="mb-3 block text-base font-medium text-[#07074D]"
+              >
+                Message
+              </label>
+              <textarea
+                rows="4"
+                name="message"
+                id="message"
+                placeholder="Type your message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                onBlur={() => handleBlur("message")}
+                className={`w-full resize-none rounded-md border py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md ${
+                  messageError ? "border-red-500" : "border-[#e0e0e0]"
+                }`}
+              ></textarea>
+              {messageError && (
+                <span className="text-red-500">{messageError}</span>
+              )}
+            </div>
+
+            {/* Submit Button */}
+            <div>
+              <button
+                type="submit"
+                className="submit-button hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-black outline-none"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
       </div>
-    );
-  }
-  
+    </div>
+  );
+}

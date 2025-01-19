@@ -10,6 +10,9 @@
 
 #resume-button {
   margin-bottom: 40px;
+  outline: 3px solid gold;
+  outline-offset: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 p {
@@ -19,6 +22,11 @@ p {
   text-align: center;
   margin: 0 auto 30px;
   max-width: 700px;
+}
+
+p:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
