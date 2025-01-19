@@ -3,6 +3,10 @@ import Card from "../Card";
 import "../../assets/css/Portfolio.css";
 import mvcImage from "../../assets/images/MVC-tech-blog.jpg";
 import musicImage from "../../assets/images/Music-discovery-app.jpg";
+import blogImage from "../../assets/images/My-First-Blog.jpg";
+import onTask from "../../assets/images/On-task.jpg";
+import weather from "../../assets/images/Weather-forecaster.jpg";
+import Jate from "../../assets/images/JATE.jpg";
 
 export default function Portfolio() {
   const projects = [
@@ -19,28 +23,28 @@ export default function Portfolio() {
       deployed: "https://rennancruz.github.io/music-discovery-app/",
     },
     {
-      title: "Project 3",
-      image: "https://placehold.co/600x400",
-      github: "http://google.com",
-      deployed: "http://google.com",
+      title: "My Life Blog",
+      image: blogImage,
+      github: "https://github.com/Kwansom/my-life-blog",
+      deployed: "https://kwansom.github.io/my-life-blog/",
     },
     {
-      title: "Project 4",
-      image: "https://placehold.co/600x400",
-      github: "http://google.com",
-      deployed: "http://google.com",
+      title: "On Task",
+      image: onTask,
+      github: "https://github.com/Kwansom/on-task",
+      deployed: " https://on-task.onrender.com/login",
     },
     {
-      title: "Project 5",
-      image: "https://placehold.co/600x400",
-      github: "http://google.com",
-      deployed: "http://google.com",
+      title: "Weather Forecaster",
+      image: weather,
+      github: "https://github.com/Kwansom/weather-forecaster",
+      deployed: "https://kwansom.github.io/weather-forecaster/",
     },
     {
-      title: "Project 6",
-      image: "https://placehold.co/600x400",
-      github: "http://google.com",
-      deployed: "http://google.com",
+      title: "Just Another Text Editor",
+      image: Jate,
+      github: "https://github.com/Kwansom/PWA-Text-Editor",
+      deployed: "https://pwa-text-editor-866t.onrender.com/",
     },
   ];
 

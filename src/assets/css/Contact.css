@@ -59,3 +59,63 @@ label:hover {
   transform: scale(1.05);
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 480px) {
+  .contact-head {
+    width: 90%;
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-size: 16px;
+    padding: 6px 15px;
+  }
+
+  .submit-button {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 0;
+  }
+}
+
+/* Tablet (medium screens) */
+@media (max-width: 768px) {
+  .contact-head {
+    width: 85%;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  label {
+    font-size: 17px;
+    padding: 8px 18px;
+  }
+
+  .submit-button {
+    width: 90%;
+    font-size: 15px;
+    padding: 12px 35px;
+  }
+}
+
+/* Desktop (larger screens) */
+@media (min-width: 1024px) {
+  .contact-head {
+    width: 80%;
+    padding: 20px;
+    font-size: 24px;
+  }
+
+  label {
+    font-size: 18px;
+    padding: 8px 20px;
+  }
+
+  .submit-button {
+    font-size: 16px;
+    padding: 12px 40px;
+  }
+}
