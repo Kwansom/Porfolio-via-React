@@ -48,3 +48,7 @@
 .card:hover .card-text {
   opacity: 1;
 }
+
+.card-deployed {
+  margin-top: 10px;
+}
