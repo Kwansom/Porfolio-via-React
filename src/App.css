@@ -45,6 +45,10 @@
   transform: scale(1.05);
 }
 
+.portfolio-section {
+  margin-top: 20px;
+}
+
 .card {
   border: 1px solid black;
   width: 45%;
