@@ -44,32 +44,3 @@
 .name:hover {
   transform: scale(1.05);
 }
-
-.portfolio-section {
-  margin-top: 20px;
-}
-
-.card {
-  border: 1px solid black;
-  width: 45%;
-  /* height: 200px; */
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-image {
-  width: 100%;
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.card-text {
-  position: absolute;
-  text-align: center;
-}

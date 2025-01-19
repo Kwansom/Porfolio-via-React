@@ -1,7 +1,7 @@
 export default function Card({ project }) {
   return (
     <div className="card">
-      <img className="card-image" src={project.image} />
+      <img className="card-image" src={project.image}   style={{ width: "100%", height: "auto", borderRadius: "8px" }}  />
       <div className="card-text">
         <h1 className="card-title">{project.title}</h1>
         <p className="card-github">

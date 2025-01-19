@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "../Card";
+import "../../assets/css/Portfolio.css";
+import mvcImage from "../../assets/images/MVC-tech-blog.jpg";
+import musicImage from "../../assets/images/Music-discovery-app.jpg";
 
 export default function Portfolio() {
   const projects = [
     {
       title: "MVC Tech Blog",
-      image: "https://placehold.co/600x400",
+      image: mvcImage,
       github: "https://github.com/Kwansom/MVC-Tech-Blog",
       deployed: "https://mvc-tech-blog-1dzl.onrender.com/",
     },
     {
       title: "Music Discovery App",
-      image: "https://placehold.co/600x400",
+      image: musicImage,
       github: "https://github.com/Kwansom/music-discovery-app",
       deployed: "https://rennancruz.github.io/music-discovery-app/",
     },
@@ -46,8 +49,8 @@ export default function Portfolio() {
       {/* <h1>Work</h1> */}
 
       <div className="card-container">
-        {projects.map((project) => {
-          return <Card project={project} />;
+        {projects.map((project, index) => {
+          return <Card key={index} project={project} />;
         })}
       </div>
     </section>

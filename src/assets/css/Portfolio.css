@@ -1,0 +1,50 @@
+.portfolio-section {
+  margin-top: 20px;
+}
+
+.card {
+  position: relative;
+  width: 45%;
+  margin: 15px;
+  display: flex;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  outline: 4px solid lemonchiffon;
+  outline-offset: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .card-image {
+  opacity: 0.6;
+  filter: blur(1px);
+  transition: filter 0.3s ease;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-text {
+  position: absolute;
+  text-align: center;
+  color: black;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.card:hover .card-text {
+  opacity: 1;
+}
